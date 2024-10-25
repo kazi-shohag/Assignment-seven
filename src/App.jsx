@@ -1,14 +1,16 @@
 
-import Header from '../public/components/Header/Header'
 import './App.css'
+import Carts from './components/Carts/Carts'
+
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-      
-      <h1 className='font-extralight bg-slate-950'>BpL Players Sellect Site.</h1>
+   
       <Header></Header>
+      <Carts></Carts>
       
     </>
   )

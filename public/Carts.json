@@ -1,0 +1,68 @@
+[
+    {
+        "img": "https://i.ibb.co.com/T82PYw7/yogendra-singh-Resjc-Go-MRRI-unsplash.jpg",
+        "name": "Vintage Art Deco Watch",
+        "country": "France",
+        "quality": "Premium",
+        "style": "Left-Hand-Bat",
+        "prize": 3200,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    },
+    {
+        "img": "https://i.ibb.co.com/nnsdczB/yogendra-singh-vd-K00-Qx-Po-Xk-unsplash.jpg",
+        "name": "Traditional Handwoven Rug",
+        "country": "Morocco",
+        "quality": "Handcrafted",
+        "style": "Left-Hand-Bat",
+        "prize": 1200,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    },
+    {
+        "img": "https://i.ibb.co.com/KrNr1wv/yogendra-singh-m-Wf-OSZmn-Ik0-unsplash.jpg",
+        "name": "Classic Leather Wallet",
+        "country": "Italy",
+        "quality": "High Grade",
+        "style": "Left-Hand-Bat",
+        "prize": 180,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    },
+    {
+        "img": "https://i.ibb.co.com/5RpLfNG/yogendra-singh-r-Svvh-Xi9-Fjg-unsplash.jpg",
+        "name": "Eco-friendly Bamboo Sunglasses",
+        "country": "Japan",
+        "quality": "Eco",
+        "style": "Left-Hand-Bat",
+        "prize": 85,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    },
+    {
+        "img": "https://i.ibb.co.com/pX7bFQv/yogendra-singh-qp-AShp6-RR0-Y-unsplash.jpg",
+        "name": "Handcrafted Ceramic Vase",
+        "country": "Greece",
+        "quality": "Artisan",
+        "style": "Left-Hand-Bat",
+        "prize": 320,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    },
+    {
+        "img": "https://i.ibb.co.com/T82PYw7/yogendra-singh-Resjc-Go-MRRI-unsplash.jpg",
+        "name": "Luxury Cashmere Scarf",
+        "country": "Scotland",
+        "quality": "Top Grade",
+        "style": "Left-Hand-Bat",
+        "prize": 450,
+        "button": "Choose Player",
+        "button1": "All-Rounder",
+        "rat":"Rating"
+    }
+]
