@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Cart=({cart, handleplayer})=>{
-    const {name, img, rat, country, quality, style, button, button1, prize}=cart;
+    const {name, img, rat, country, style, button, button1, prize}=cart;
     return(
         <div className="border-[1px] stroke-slate-200 rounded-lg p-2 mx-8 space-y-3">
             <img className=" rounded-lg h-[250px]" src={img} />

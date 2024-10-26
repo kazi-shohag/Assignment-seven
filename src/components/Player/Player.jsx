@@ -1,16 +1,18 @@
+import PropTypes from 'prop-types';
+
 import Playe from "../Playe/Playe"
 
-const Players=({player})=>{
-// const {img, name, style}=player;
-// console.log(player)
+const Players=({player,active})=>{
+
     return(
-        <div className="mb-5">
+            <div className={`${active? '':'displayhide'} `}>
 
         <h2 className="mx-8 text-3xl font-bold my-4 ">Selected Player({player.length}/6)</h2>
         <div className="mx-8 space-y-4">
         {
             player.map((playe,idx)=><Playe 
             key={idx}
+            // active={active}
             playe={playe}
             ></Playe>)
         }
@@ -23,5 +25,8 @@ const Players=({player})=>{
        
     )
 }
-
+Players.propTypes ={
+    active:PropTypes.bool,
+    player:PropTypes.array
+}
 export default Players

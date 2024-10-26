@@ -9,11 +9,26 @@ import Subscribe from './components/Subscribe/Subscribe'
 import Fotter from './components/Fotter/Footer'
 
 function App() {
-
+  const [active, setactive]=useState(false)
+  // const [isactive, setisactive]=useState(false)
   const [player, setplayer]=useState([])
   let [coin,setcoin]=useState(0)
-  // player.map(crickter=>crickter.prize< coin ? alert('congratualation'): alert('disappinted'))
   
+  const handleavailable=()=>{
+    if(active===true){
+      setactive(!active)
+    }
+    // if(isactive===false){
+    //   setisactive(!isactive)
+    // }
+  }
+  const handlesellect=()=>{
+    if(active===false){
+      setactive(!active)
+    }
+    // console.log("kaj hobe")
+  }
+  // active==false
   let money=10000;
   const handleBanner= money =>{
       const newCoin=coin+money;
@@ -41,11 +56,17 @@ function App() {
       money={money}
       handleBanner={handleBanner}
       ></Header>
+
       <Carts 
+      handleavailable={handleavailable}
+      active={active}
+      handlesellect={handlesellect}
       player={player}
       handleplayer={handleplayer}
       ></Carts>
+
       <Players
+      active={active}
       player={player}
       ></Players>
 

@@ -9,3 +9,6 @@
     position: relative;
     top:100px ;
 }
+.displayhide{
+    display: none;
+}

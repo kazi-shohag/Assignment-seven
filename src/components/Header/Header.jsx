@@ -1,7 +1,7 @@
 import navimg from '../../assets/images/logo.png'
 import bannerimg from '../../assets/images/banner-main.png'
 import backimg from '../../assets/images/bg-shadow.png'
-
+import PropTypes from 'prop-types';
 
 
 const Header=({coin, money, handleBanner})=>{
@@ -28,5 +28,10 @@ const Header=({coin, money, handleBanner})=>{
         </div>
        </div>
     )
+}
+Header.propTypes={
+    coin:PropTypes.number,
+    money:PropTypes.number,
+    handleBanner:PropTypes.func
 }
 export default Header;

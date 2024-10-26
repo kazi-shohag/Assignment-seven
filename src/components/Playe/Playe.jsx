@@ -1,8 +1,8 @@
 
-
+import PropTypes from 'prop-types';
 const Playe=({playe})=>{
     return (
-        <div>
+        <div >
             <div className="border-[1px] rounded-lg stroke-stone-50 px-5 py-3">
              
              <div className="flex justify-between items-center">
@@ -25,5 +25,9 @@ const Playe=({playe})=>{
        </div>
         
     )
+}
+Playe.propTypes ={
+    // active:PropTypes.bool,
+    playe:PropTypes.object
 }
 export default Playe;
