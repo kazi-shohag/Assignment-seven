@@ -5,11 +5,13 @@ import Carts from './components/Carts/Carts'
 
 import Header from './components/Header/Header'
 import Players from './components/Player/Player'
+import Subscribe from './components/Subscribe/Subscribe'
+import Fotter from './components/Fotter/Footer'
 
 function App() {
 
   const [player, setplayer]=useState([])
-  const [coin,setcoin]=useState(0)
+  let [coin,setcoin]=useState(0)
   // player.map(crickter=>crickter.prize< coin ? alert('congratualation'): alert('disappinted'))
   
   let money=10000;
@@ -20,10 +22,15 @@ function App() {
 
   const handleplayer=cart=>{
     const newPlayer=[...player, cart]
-    console.log(cart.prize)
-    console.log(coin)
-    cart.prize< coin ? alert('congratualation'): alert('disappinted')
+   
+   if(cart.prize< coin){
+    alert('congratualation');
+    setcoin(coin-cart.prize);
     setplayer(newPlayer)
+   }
+   else{
+    alert('disappionted')
+   }
   }
 
   return (
@@ -41,6 +48,9 @@ function App() {
       <Players
       player={player}
       ></Players>
+
+      <Subscribe></Subscribe>
+      <Fotter></Fotter>
       
     </>
   )

@@ -1,19 +1,10 @@
 import navimg from '../../assets/images/logo.png'
 import bannerimg from '../../assets/images/banner-main.png'
 import backimg from '../../assets/images/bg-shadow.png'
-// import { useState } from 'react';
+
 
 
 const Header=({coin, money, handleBanner})=>{
-    
-    
-    // const [coin,setcoin]=useState(0)
-    // let money=10000;
-    // const handleBanner= money =>{
-    //     const newCoin=coin+money;
-    //     setcoin(newCoin)
-    // }
-    // player.map(crickter=>crickter.prize< coin ? alert('congratualation'): alert('disappinted'))
     
     return(
        <div className='mx-8'>

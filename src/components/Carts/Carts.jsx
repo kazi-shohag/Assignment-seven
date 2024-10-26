@@ -18,11 +18,11 @@ const Carts=({handleplayer,player})=>{
         <div>
 
         <div className='mx-8 mt-3'>
-            <div className='flex justify-between items-center'>
+            <div className='mt-8 flex justify-between items-center'>
                 <h2 className='text-lg font-bold'>Available Players</h2>
                 <div>
-                    <button className="btn px-3">Available</button>
-                    <button className="btn px-3">Selected({player.length})</button>
+                    <button className="border-[1px] shadow-slate-50 rounded-l-xl py-2 px-4">Available</button>
+                    <button className="border-[1px] shadow-slate-50 rounded-r-xl py-2 px-4">Selected({player.length})</button>
                 </div>
             </div>
         </div>
@@ -41,7 +41,8 @@ const Carts=({handleplayer,player})=>{
     )
 }
 Carts.propTypes={
-    handleplayer:PropTypes.func
+    handleplayer:PropTypes.func,
+    player:PropTypes.object
 
 }
 export default Carts;
