@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 
-const Cart=({cart})=>{
+const Cart=({cart, handleplayer})=>{
     const {name, img, rat, country, quality, style, button, button1, prize}=cart;
     return(
         <div className="border-[1px] stroke-slate-200 rounded-lg p-2 mx-8 space-y-3">
@@ -29,9 +30,14 @@ const Cart=({cart})=>{
            </div>
             <div className="flex justify-between items-center">
                 <p className="font-medium text-base">Price: ${prize}</p>
-                <button className="btn px-3 py-1 bg-slate-50">{button}</button>
+                <button onClick={()=>handleplayer(cart)} className="btn px-3 py-1 bg-slate-50">{button}</button>
             </div>
         </div>
     )
+}
+Cart.propTypes={
+    cart: PropTypes.object.isRequired,
+    handleplayer:PropTypes.func
+    
 }
 export default Cart;

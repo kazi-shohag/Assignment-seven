@@ -1,7 +1,9 @@
+import PropTypes from 'prop-types';
+
 import { useEffect, useState } from 'react';
 import './Carts.css'
 import Cart from '../Cart/Cart';
-const Carts=()=>{
+const Carts=({handleplayer,player})=>{
     const [carts, setcarts]=useState([])
 
     useEffect(()=>{
@@ -9,10 +11,8 @@ const Carts=()=>{
         .then(res=>res.json())
         .then(data=>setcarts(data))
     },[])
-
-    const handleCart=()=>{
-        
-    }
+    
+  
 
     return(
         <div>
@@ -21,8 +21,8 @@ const Carts=()=>{
             <div className='flex justify-between items-center'>
                 <h2 className='text-lg font-bold'>Available Players</h2>
                 <div>
-                    <button onClick={handleCart} className="btn px-3">Available</button>
-                    <button className="btn px-3">Selected( )</button>
+                    <button className="btn px-3">Available</button>
+                    <button className="btn px-3">Selected({player.length})</button>
                 </div>
             </div>
         </div>
@@ -31,12 +31,17 @@ const Carts=()=>{
            {
             carts.map((cart,idx)=><Cart
             key={idx}
-            cart={cart} ></Cart>)
+            cart={cart} 
+            handleplayer={handleplayer}
+            ></Cart>)
         }
            </div>
         </div>
       
     )
 }
+Carts.propTypes={
+    handleplayer:PropTypes.func
 
+}
 export default Carts;
